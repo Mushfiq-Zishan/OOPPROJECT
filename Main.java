@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 
 // 1. ================= MAIN CLASS =================
 public class Main {
