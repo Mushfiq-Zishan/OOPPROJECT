@@ -3,7 +3,7 @@ class Train {
     private String trainName, source, destination;
 
     public Train(String name, String s, String d) {
-        this.trainNumber = (int)(Math.random() * 9000) + 1000; // Random Train Number
+        this.trainNumber = (int)(Math.random() * 9000) + 1000; 
         this.trainName = name;
         this.source = s;
         this.destination = d;
