@@ -1,8 +1,16 @@
-// 6. ================= TICKET CLASS =================
 class Ticket {
-    int id; double price;
-    public Ticket(int id, double p) { this.id = id; this.price = p; }
+    private int ticketNumber;
+    private double price;
+
+    public Ticket(int id, double p) {
+        this.ticketNumber = id;
+        this.price = p;
+    }
+
+    public void generateTicket() { System.out.println("Ticket generated."); }
+    public void cancelTicket() { System.out.println("Ticket cancelled."); }
+
     void showDetails() {
-        System.out.println("Ticket ID: #" + id + " | Fair Amount: " + price + " TK");
+        System.out.println("Ticket ID: #" + ticketNumber + " | Fair Amount: " + price + " TK");
     }
 }
