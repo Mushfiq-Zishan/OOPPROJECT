@@ -1,14 +1,15 @@
-// 5. ================= TRAIN CLASS =================
 class Train {
-    String tName, src, dest;
+    private int trainNumber;
+    private String trainName, source, destination;
 
-    public Train(String n, String s, String d) {
-        this.tName = n;
-        this.src = s;
-        this.dest = d;
+    public Train(String name, String s, String d) {
+        this.trainNumber = (int)(Math.random() * 9000) + 1000; // Random Train Number
+        this.trainName = name;
+        this.source = s;
+        this.destination = d;
     }
 
     void showDetails() {
-        System.out.println("Train: " + tName + " | Source: " + src + " | Destination: " + dest);
+        System.out.println("Train: " + trainName + " | Source: " + source + " | Destination: " + destination);
     }
 }
