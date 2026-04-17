@@ -1,9 +1,8 @@
-// 8. ================= CARD PAYMENT CLASS =================
 class CardPayment implements Payment {
-    String cardNo;
-    public CardPayment(String no) { this.cardNo = no; }
+    private String cardNumber;
+    public CardPayment(String no) { this.cardNumber = no; }
     @Override
     public void pay(double amount) {
-        System.out.println("Payment: " + amount + " TK paid via Card (" + cardNo + ")");
+        System.out.println("Payment: " + amount + " TK paid via Card (" + cardNumber + ")");
     }
 }
