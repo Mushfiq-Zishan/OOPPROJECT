@@ -1,9 +1,8 @@
-// 9. ================= MOBILE PAYMENT CLASS =================
 class MobilePayment implements Payment {
-    String mobileNo;
-    public MobilePayment(String no) { this.mobileNo = no; }
+    private String mobileNumber;
+    public MobilePayment(String no) { this.mobileNumber = no; }
     @Override
     public void pay(double amount) {
-        System.out.println("Payment: " + amount + " TK paid via Mobile (" + mobileNo + ")");
+        System.out.println("Payment: " + amount + " TK paid via Mobile/Bank (" + mobileNumber + ")");
     }
 }
